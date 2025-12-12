@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns="http://jboss.org/schema/arquillian"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://jboss.org/schema/arquillian https://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+    <container qualifier="wildfly">
+        <configuration>
+            <property name="jbossHome">/home/lthon/tmp/wildfly-39.0.0.Final</property>
+        </configuration>
+    </container>
+
+    <container qualifier="openliberty">
+        <configuration>
+            <property name="wlpHome">/home/lthon/tmp/openliberty-25.0.0.12</property>
+        </configuration>
+    </container>
+
+    <container qualifier="payara">
+        <configuration>
+            <property name="payaraHome">/home/lthon/tmp/payara-7.2025.2</property>
+        </configuration>
+    </container>
+
+    <container qualifier="tomee">
+        <!-- no configuration needed, TomEE Arquillian adapter downloads the server automatically -->
+    </container>
+
+</arquillian>
